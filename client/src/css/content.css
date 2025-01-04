@@ -1,0 +1,76 @@
+.hero {
+    margin-top: 50px;
+    height: 65vh;
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/08/15/Broken-White-Book-Store-Hero-Section-Graphics-36222978-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .sec {
+    margin: 20px 0;
+  }
+  
+  .label {
+    width: 70vw;
+    height: 100px;
+    background-color: rgb(255, 102, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    color: white;
+  }
+
+  .label1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    color: #e7e7e7;
+  }
+  
+  .forStyle {
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    background-color: white;
+    transform: rotate(45deg);
+  }
+  
+  .books {
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    height: fit-content;
+    gap: 30px;
+    overflow-x: auto;
+  }
+  
+  .book {
+    width: 250px;
+    height: 390px;
+    background-color: #7979793f;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #7979793f;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .book1 {
+    background-image: url(https://marketplace.canva.com/EAGG2TOoO7A/1/0/1024w/canva-blue-and-white-modern-business-book-cover-ebook-r7Yl7pLyosw.jpg);
+  }
+  
+  .book2 {
+    background-image: url(https://marketplace.canva.com/EAE7HbeUHuE/1/0/1024w/canva-yellow-and-black-simple-textured-learn-basic-design-ebook-cover-zXspWQ8laP4.jpg);
+  }
+  
+  .book3 {
+    background-image: url(https://marketplace.canva.com/EAFzmEHEJPw/2/0/1024w/canva-neutral-minimalist-aesthetic-time-management-ebook-cover-PSoR42xOBIE.jpg);
+  }
+  
+  .book4 {
+    background-image: url(https://marketplace.canva.com/EAFYQLZhxpI/2/0/1024w/canva-black-textured-self-help-ebook-cover-mea-L0tQ5HA.jpg);
+  }
