@@ -1,5 +1,9 @@
+.search_sections {
+    display: flex;
+}
+
 .side_bar {
-    width: 25vw;
+    width: 300px;
     padding: 30px;
     height: fit-content;
     border-right: 1px solid rgb(0, 0, 0, 0.486);
@@ -30,12 +34,12 @@
 }
 
 .drop_icon {
-  width: 10px;
-  height: 10px;
-  background-image: url(https://cdn-icons-png.flaticon.com/512/60/60995.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0px 0 0 7px;
+    width: 10px;
+    height: 10px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/60/60995.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px 0 0 7px;
 }
 
 .type {
@@ -49,10 +53,6 @@
         color: white;
         background-color: rgb(255, 102, 0);
     }
-}
-
-main {
-    display: flex;
 }
 
 .listed_items {

@@ -7,22 +7,28 @@ import Navbar from './components/navbar/Navbar';
 import Content from './components/content/Content';
 import Footer from './components/footer/Footer';
 import Search from './components/search/Search';
+import Book from './components/book/Book';
 
 import './css/header.css';
 import './css/navbar.css';
 import './css/content.css';
 import './css/footer.css';
 import './css/search.css';
+import './css/book.css';
 
 function App() {
   return (
     <Router>
       <div>
-        <Header />
+        <header>
+        <Header/>
+        <Navbar/>
+        </header>
         <Routes>
 
-          <Route path="/" element={<> <Navbar /> <Content /> </>} />
-          <Route path="/search" element={<> <Navbar /> <Search/> </>} />
+          <Route path="/" element={<> <Content /> </>} />
+          <Route path="/search" element={<> <Search/> </>} />
+          <Route path="/book" element = { <> <Book/> </>} />
 
         </Routes>
         <Footer />

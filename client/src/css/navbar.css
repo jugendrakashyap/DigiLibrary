@@ -1,67 +1,72 @@
+.navbar {
+  padding-right: 30px;
+  background-color: white;
+}
+
 .dropdown-toggle {
-    list-style: none;
-    float: right;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    width: 100vw;
-  }
-  
-  .dropdown-menu {
-    display: inline-block;
-    line-height: 5vh;
-  }
-  
-  .option {
-    padding: 7px 0 7px 20px;
-    list-style-type: none;
-    cursor: pointer;
-    text-align: left;
-  }
-  
-  .option:hover {
-    color: white;
-    background-color: rgb(255, 102, 0);
-  }
-  
-  .options {
-    display: none;
-    float: right;
-    width: 200px;
-    position: absolute;
-    background-color: white;
-  }
-  
+  list-style: none;
+  float: right;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+}
+
+.dropdown-menu {
+  display: inline-block;
+  line-height: 5vh;
+}
+
+.option {
+  padding: 7px 0 7px 20px;
+  list-style-type: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option:hover {
+  color: white;
+  background-color: rgb(255, 102, 0);
+}
+
+.options {
+  display: none;
+  float: right;
+  width: 200px;
+  position: absolute;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin-right: 1vw;
+}
+
+@media (max-width: 1400px) {
   .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    margin-right: 1vw;
+    font-size: 0.9rem;
   }
-  
-  @media (max-width: 1400px) {
-    .menu {
-        font-size: 0.9rem;
-    }
-  }
-  
-  .mini-menu {
-    width: 10px;
-    height: 8px;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/60/60995.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0px 0 0 7px;
-  }
-  
-  .dropdown-menu:hover .options {
-    display: block;
-  }
-  
-  .dropdown-menu:hover .menu {
-    border-bottom: 0.5vh solid rgb(255, 102, 0);
-  }
+}
+
+.mini-menu {
+  width: 10px;
+  height: 8px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/60/60995.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px 0 0 7px;
+}
+
+.dropdown-menu:hover .options {
+  display: block;
+}
+
+.dropdown-menu:hover .menu {
+  border-bottom: 0.5vh solid rgb(255, 102, 0);
+}

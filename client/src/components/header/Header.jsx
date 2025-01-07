@@ -26,37 +26,35 @@ function Header() {
     window.addEventListener('DOMContentLoaded', headerJs);
 
     return (
-        <header>
-            <div class="top_header flex">
-                <div class="logo_box flex">
-                    <img class="logo_img" src="logo.png" alt="img" />
-                    <h1><span>digi</span>Library</h1>
-                </div>
-                <div class="search_box" id="search_box">
-                    <input class="search_bar" id="search_bar" type="text" placeholder="Search for a ebook" />
-                    <div class="search_options" id="search_options">
-                        <p class="search_option">Pride and Prejudice</p>
-                        <p class="search_option">The Great Gatsby</p>
-                        <p class="search_option">To Kill a Mockingbird</p>
-                        <p class="search_option">Harry Potter series</p>
-                        <p class="search_option">War and Peace</p>
-                        <p class="search_option">To Kill a Mockingbird</p>
-                        <p class="search_option">Harry Potter series</p>
-                        <p class="search_option">War and Peace</p>
-                    </div>
-                </div>
-                <div class="flex buttons">
-                    <div class="flex login_box">
-                        <div class="login_btn"></div>
-                        <p>Profile</p>
-                    </div>
-                    <div class="flex library_box">
-                        <div class="library_btn"></div>
-                        <p>My Books</p>
-                    </div>
+        <div class="top_header flex">
+            <div class="logo_box flex" onClick={window.href.location = '/'}>
+                <div class="logo_img"></div>
+                <h1><span>digi</span>Library</h1>
+            </div>
+            <div class="search_box" id="search_box">
+                <input class="search_bar" id="search_bar" type="text" placeholder="Search for a ebook" />
+                <div class="search_options" id="search_options">
+                    <p class="search_option">Pride and Prejudice</p>
+                    <p class="search_option">The Great Gatsby</p>
+                    <p class="search_option">To Kill a Mockingbird</p>
+                    <p class="search_option">Harry Potter series</p>
+                    <p class="search_option">War and Peace</p>
+                    <p class="search_option">To Kill a Mockingbird</p>
+                    <p class="search_option">Harry Potter series</p>
+                    <p class="search_option">War and Peace</p>
                 </div>
             </div>
-        </header>
+            <div class="flex buttons">
+                <div class="flex login_box">
+                    <div class="login_btn"></div>
+                    <p>Profile</p>
+                </div>
+                <div class="flex library_box">
+                    <div class="library_btn"></div>
+                    <p>My Books</p>
+                </div>
+            </div>
+        </div>
     )
 }
 

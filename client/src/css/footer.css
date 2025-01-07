@@ -2,6 +2,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: rgb(27, 27, 27);
+    padding: 0 50px;
 }
 
 .footer_logo {
@@ -68,10 +69,9 @@ footer {
 .contact {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.06);
-    margin: 0 50px;
 }
 
 .copyright {

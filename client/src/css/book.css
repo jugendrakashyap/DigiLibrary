@@ -1,0 +1,49 @@
+.book_sections {
+    display: flex;
+}
+
+.book_section {
+    width: 40vw;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.8);
+    display: flex;
+}
+
+.description_section {
+    width: 60vw;
+    height: 800px;
+    background-color: rgb(226, 226, 226);
+}
+
+.book_images {
+    width: 20%;
+    height: 100%;
+}
+
+.book_image_box {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(143, 143, 143);
+}
+
+.book_image {
+    width: 100%;
+    height: 20%;
+    border: 1px solid rgb(143, 143, 143);
+}
+
+.book_main_image {
+    width: auto;
+    height: 83%;
+    background-color: rgb(226, 226, 226);
+    margin: 2%;
+}
+
+.book_btns {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(255, 102, 0);
+}
