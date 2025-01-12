@@ -24,6 +24,9 @@ function Search() {
                     genre[i].textContent = data[i].genre;
                 }
 
+                document.getElementById('item_box').addEventListener('click', () => {
+                    window.location.href = '/book';
+                })
             }
             // Add event listener to DOMContentLoaded to load the header JS when the page is fully loaded
             window.addEventListener('DOMContentLoaded', listBooks());
@@ -116,7 +119,7 @@ function Search() {
                     </section>
 
                     <section className="listed_items">
-                        <div className="item_box">
+                        <div className="item_box" id='item_box'>
                             <div className="item_sec">
                                 <img className="book_img"
                                     src="https://marketplace.canva.com/EAFzmEHEJPw/2/0/1024w/canva-neutral-minimalist-aesthetic-time-management-ebook-cover-PSoR42xOBIE.jpg"
@@ -130,7 +133,7 @@ function Search() {
                                     In the heart of New York, journalist Anna Carter lives for the thrill of the next big story. But
                                     when an anonymous letter lands on her desk, her life takes a dangerous turn.
                                 </p>
-                                <a href="#">details</a>
+                                <a href="/book">details</a>
                             </div>
                             <div className="item_sec3">
                                 <div className="btns">

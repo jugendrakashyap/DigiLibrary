@@ -1,6 +1,9 @@
 import React from 'react'
 
 function content() {
+    function scrollPage() {
+        document.getElementById('scrollable').scrollBy({ left: 500, behavior: 'smooth' })
+    }
     return (
         <main>
             <section class="hero"></section>
@@ -13,7 +16,8 @@ function content() {
                     </div>
                     <div class="forStyle"></div>
                 </div>
-                <div class="books">
+                <div class="books" id='scrollable'>
+                    <div className='scroll_btn' onClick={scrollPage}></div>
                     <div>
                         <div class="book book2"></div>
                         <h3>Book Name</h3>
