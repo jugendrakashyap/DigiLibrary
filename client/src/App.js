@@ -1,39 +1,33 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import './App.css';
 import Header from './components/header/Header';
+import Login from './components/login/Login';
+import Signup from './components/signup/Signup';
 import Navbar from './components/navbar/Navbar';
 import Content from './components/content/Content';
 import Footer from './components/footer/Footer';
 import Search from './components/search/Search';
 import Book from './components/book/Book';
-
-import './css/login.css';
-import './css/header.css';
-import './css/navbar.css';
-import './css/content.css';
-import './css/footer.css';
-import './css/search.css';
-import './css/book.css';
+import Mybooks from './components/mybooks/Mybooks';
 
 function App() {
+  const { id } = useParams();
   return (
     <Router>
-      <div>
-        <header>
-        <Header/>
-        <Navbar/>
-        </header>
-        <Routes>
+      <Routes>
 
-          <Route path="/" element={<> <Content /> </>} />
-          <Route path="/search" element={<> <Search/> </>} />
-          <Route path="/book" element = { <> <Book/> </>} />
+        <Route path="/" element={<> <header><Header /><Navbar /></header> <Content /><Footer /> </>} />
+        <Route path="/login" element={<><header><Header /></header> <Login /> </>} />
+        <Route path="/signup" element={<><header><Header /></header> <Signup /> </>} />
+        <Route path="/:id" element={<> <header><Header /><Navbar /></header> <Content /><Footer /> </>} />
+        <Route path="/search" element={<><header><Header /><Navbar /></header> <Search /><Footer /> </>} />
+        <Route path="/book" element={<><header><Header /><Navbar /></header> <Book /><Footer /> </>} />
+        <Route path="/collections" element={<><header><Header /><Navbar /></header> <Mybooks /> </>} />
 
-        </Routes>
-        <Footer />
-      </div>
+      </Routes>
     </Router>
   );
 }

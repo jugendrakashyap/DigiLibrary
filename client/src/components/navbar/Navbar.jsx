@@ -1,93 +1,94 @@
 import React from 'react'
 
+import '../../css/navbar.css'
 function Navbar() {
     return (
-        <div class="navbar">
+        <div className="navbar">
             <nav>
-                <ul class="dropdown-toggle">
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                <ul className="dropdown-toggle">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>ABOUT US</p>
-                            <div class="mini-menu"></div>
+                            <div className="mini-menu"></div>
                         </div>
-                        <ul class="options sec1">
-                            <li class="option">Overview</li>
-                            <li class="option">Company Vision</li>
-                            <li class="option">Achievements</li>
-                            <li class="option">Careers</li>
-                            <li class="option">Contact Us</li>
+                        <ul className="options sec1">
+                            <li className="option">Overview</li>
+                            <li className="option">Company Vision</li>
+                            <li className="option">Achievements</li>
+                            <li className="option">Careers</li>
+                            <li className="option">Contact Us</li>
                         </ul>
                     </li>
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>SCIENCE</p>
-                            <div class="mini-menu"></div>
+                            <div className="mini-menu"></div>
                         </div>
-                        <ul class="options sec1">
-                            <li class="option">Overview</li>
-                            <li class="option">Company Vision</li>
-                            <li class="option">Achievements</li>
-                            <li class="option">Careers</li>
-                            <li class="option">Contact Us</li>
+                        <ul className="options sec1">
+                            <li className="option">Overview</li>
+                            <li className="option">Company Vision</li>
+                            <li className="option">Achievements</li>
+                            <li className="option">Careers</li>
+                            <li className="option">Contact Us</li>
                         </ul>
                     </li>
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>PSHYCOLOGY</p>
-                            <div class="mini-menu"></div>
+                            <div className="mini-menu"></div>
                         </div>
-                        <ul class="options sec1">
-                            <li class="option">Overview</li>
-                            <li class="option">Company Vision</li>
-                            <li class="option">Achievements</li>
-                            <li class="option">Careers</li>
-                            <li class="option">Contact Us</li>
+                        <ul className="options sec1">
+                            <li className="option">Overview</li>
+                            <li className="option">Company Vision</li>
+                            <li className="option">Achievements</li>
+                            <li className="option">Careers</li>
+                            <li className="option">Contact Us</li>
                         </ul>
                     </li>
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>BOIGRAPHY</p>
-                            <div class="mini-menu"></div>
+                            <div className="mini-menu"></div>
                         </div>
-                        <ul class="options sec4">
-                            <li class="option">Overview</li>
-                            <li class="option">Finacial Reports</li>
-                            <li class="option">Investor Information</li>
-                            <li class="option">Investor Communication</li>
-                            <li class="option">SEBI Discloser</li>
+                        <ul className="options sec4">
+                            <li className="option">Overview</li>
+                            <li className="option">Finacial Reports</li>
+                            <li className="option">Investor Information</li>
+                            <li className="option">Investor Communication</li>
+                            <li className="option">SEBI Discloser</li>
                         </ul>
                     </li>
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>NOVELS</p>
-                            <div class="mini-menu"></div>
+                            <div className="mini-menu"></div>
                         </div>
-                        <ul class="options sec5">
-                            <li class="option">ESG Profile</li>
-                            <li class="option">Option2</li>
-                            <li class="option">Option3</li>
+                        <ul className="options sec5">
+                            <li className="option">ESG Profile</li>
+                            <li className="option">Option2</li>
+                            <li className="option">Option3</li>
                         </ul>
                     </li>
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>STORIES</p>
-                            <div class="mini-menu"></div>
+                            <div className="mini-menu"></div>
                         </div>
-                        <ul class="options sec6">
-                            <li class="option">Press Release</li>
-                            <li class="option">News</li>
-                            <li class="option">Blog</li>
-                            <li class="option">Press Kit</li>
-                            <li class="option">Media Contact</li>
+                        <ul className="options sec6">
+                            <li className="option">Press Release</li>
+                            <li className="option">News</li>
+                            <li className="option">Blog</li>
+                            <li className="option">Press Kit</li>
+                            <li className="option">Media Contact</li>
                         </ul>
                     </li>
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>FICTION</p>
                         </div>
                     </li>
-                    <li class="dropdown-menu">
-                        <div class="menu">
+                    <li className="dropdown-menu">
+                        <div className="menu">
                             <p>SHOP</p>
                         </div>
                     </li>

@@ -6,7 +6,31 @@ main {
 
 .hero {
   height: 65vh;
+  display: flex;
+  overflow-x: auto;
+}
+
+.slide {
+  width: 100vw;
+  height: 65vh;
+}
+
+.slide1 {
   background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/08/15/Broken-White-Book-Store-Hero-Section-Graphics-36222978-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide2 {
+  background-image: url(https://cdn.dribbble.com/users/148405/screenshots/10812892/ebook-hero-image_4x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide3 {
+  background-image: url(https://wp.klientboost.com/wp-content/uploads/2021/12/image10-5.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,7 +74,7 @@ main {
   border-radius: 5px;
   background-color: white;
   box-shadow: -5px 0px 4px 2px rgb(92, 92, 92);
-  background-image: url(https://cdn-icons-png.flaticon.com/512/130/130884.png); 
+  background-image: url(https://cdn-icons-png.flaticon.com/512/130/130884.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../../css/search.css'
+
 function Search() {
     React.useEffect(() => {
         const fetchData = async () => {
@@ -36,7 +38,7 @@ function Search() {
     return (
         <>
             <main>
-                <div class="search_sections">
+                <div className="search_sections">
                     <section className="side_bar">
                         <ul className="">
                             <li className="main_list">

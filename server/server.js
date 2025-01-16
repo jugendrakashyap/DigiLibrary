@@ -13,18 +13,20 @@ app.use(cors());
 
 connectDb();
 
+app.post('/login', async (req, res) => {
+    const {email, password} = req.body;
+    const user = await userModel.findOne({email});
+    if (user) {
+        if(user.password === password) {
+            console.log(user.id);
+            return res.send(user.id);
+        }
+    }
+    return res.send('Invalid Username or Password');
+})
 
-app.post('/', async (req, res) => {
+app.post('/signup', async (req, res) => {
     const {name, email, phone, password} = req.body;
-    // if (!name) {
-    //     const userData = await userModel.findOne({email});
-    //     console.log(userData);
-    //     if (userData) {
-    //         return res.send('Email already exists');
-    //     } else if(userData.password === password) {
-    //         return res.send("login successfully");
-    //     }
-    // }
 
     console.log(name, email, phone, password);
     const user = await userModel.findOne({email});
@@ -33,7 +35,7 @@ app.post('/', async (req, res) => {
     }
     const newUser = new userModel({ name, email, phone, password });
     await newUser.save();
-    res.send('User registered successfully');
+    return res.send('User registered successfully');
 })
 app.get('/search', async (req, res) => {
     const data = await bookModel.find();

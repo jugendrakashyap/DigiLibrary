@@ -1,185 +1,197 @@
 import React from 'react'
 
+import '../../css/content.css'
+
 function content() {
     function scrollPage() {
         document.getElementById('scrollable').scrollBy({ left: 500, behavior: 'smooth' })
     }
     return (
         <main>
-            <section class="hero"></section>
-
-            <section class="sec sec1">
-                <div class="label1">
-                    <div class="label">
-                        <h1>Discover Our Latest Releases</h1>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
-                    </div>
-                    <div class="forStyle"></div>
+            <section className="hero">
+                <div>
+                    <div className='slide slide1'></div>
                 </div>
-                <div class="books" id='scrollable'>
+                <div>
+                    <div className='slide slide2'></div>
+                </div>
+                <div>
+                    <div className='slide slide3'></div>
+                </div>
+            </section>
+
+            <section className="sec sec1">
+                <div className="label1">
+                    <div className="label">
+                        <h1>Discover Our Latest Releases</h1>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
+                    </div>
+                    <div className="forStyle"></div>
+                </div>
+                <div className="books" id='scrollable'>
                     <div className='scroll_btn' onClick={scrollPage}></div>
                     <div>
-                        <div class="book book2"></div>
+                        <div className="book book2"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                </div>
-            </section>
-
-            <section class="sec sec1">
-                <div class="label1">
-                    <div class="label">
-                        <h1>Discover Our Latest Releases</h1>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
-                    </div>
-                    <div class="forStyle"></div>
-                </div>
-                <div class="books">
-                    <div>
-                        <div class="book book2"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div class="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div class="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div class="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div class="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div class="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div class="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                 </div>
             </section>
 
-            <section class="sec sec1">
-                <div class="label1">
-                    <div class="label">
+            <section className="sec sec1">
+                <div className="label1">
+                    <div className="label">
                         <h1>Discover Our Latest Releases</h1>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
                     </div>
-                    <div class="forStyle"></div>
+                    <div className="forStyle"></div>
                 </div>
-                <div class="books">
+                <div className="books">
                     <div>
-                        <div class="book book2"></div>
+                        <div className="book book2"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                 </div>
             </section>
 
-            <section class="sec sec1">
-                <div class="label1">
-                    <div class="label">
+            <section className="sec sec1">
+                <div className="label1">
+                    <div className="label">
                         <h1>Discover Our Latest Releases</h1>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
                     </div>
-                    <div class="forStyle"></div>
+                    <div className="forStyle"></div>
                 </div>
-                <div class="books">
+                <div className="books">
                     <div>
-                        <div class="book book2"></div>
+                        <div className="book book2"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book4"></div>
+                        <div className="book book4"></div>
                         <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div class="book book3"></div>
+                        <div className="book book3"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section className="sec sec1">
+                <div className="label1">
+                    <div className="label">
+                        <h1>Discover Our Latest Releases</h1>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ipsum sed felis</p>
+                    </div>
+                    <div className="forStyle"></div>
+                </div>
+                <div className="books">
+                    <div>
+                        <div className="book book2"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book4"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book4"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book4"></div>
+                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
                         <h3>Book Name</h3>
                     </div>
                 </div>

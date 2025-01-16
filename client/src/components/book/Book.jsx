@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../../css/book.css'
+
 function Book() {
     return (
         <>
