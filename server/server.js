@@ -18,8 +18,8 @@ app.post('/login', async (req, res) => {
     const user = await userModel.findOne({email});
     if (user) {
         if(user.password === password) {
-            console.log(user.id);
-            return res.send(user.id);
+            console.log(user);
+            return res.send("login successfully");
         }
     }
     return res.send('Invalid Username or Password');

@@ -19,9 +19,8 @@ function Login() {
             .then((res) => {
                 const id = res.data;
                 console.log(id);
-                navigate(`/${id}`);
-                // console.log('Response: ' + res.data);
-                // document.getElementById('loginForm').reset();
+                console.log('Response: ' + res.data);
+                document.getElementById('loginForm').reset();
             })
             .catch((error) => {
                 console.error('Error: ' + error);

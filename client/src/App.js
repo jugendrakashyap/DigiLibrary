@@ -12,9 +12,9 @@ import Footer from './components/footer/Footer';
 import Search from './components/search/Search';
 import Book from './components/book/Book';
 import Mybooks from './components/mybooks/Mybooks';
+import Reader from './components/reader/Reader';
 
 function App() {
-  const { id } = useParams();
   return (
     <Router>
       <Routes>
@@ -26,6 +26,7 @@ function App() {
         <Route path="/search" element={<><header><Header /><Navbar /></header> <Search /><Footer /> </>} />
         <Route path="/book" element={<><header><Header /><Navbar /></header> <Book /><Footer /> </>} />
         <Route path="/collections" element={<><header><Header /><Navbar /></header> <Mybooks /> </>} />
+        <Route path="/reader" element={<><header><Header /></header> <Reader /> </>} />
 
       </Routes>
     </Router>

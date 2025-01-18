@@ -31,36 +31,28 @@ function content() {
                 <div className="books" id='scrollable'>
                     <div className='scroll_btn' onClick={scrollPage}></div>
                     <div>
+                        <div className="book book1"></div>
+                    </div>
+                    <div>
                         <div className="book book2"></div>
-                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
                     </div>
                     <div>
                         <div className="book book4"></div>
-                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book1"></div>
+                    </div>
+                    <div>
+                        <div className="book book2"></div>
                     </div>
                     <div>
                         <div className="book book3"></div>
-                        <h3>Book Name</h3>
                     </div>
                     <div>
                         <div className="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
                     </div>
                 </div>
             </section>
@@ -73,38 +65,31 @@ function content() {
                     </div>
                     <div className="forStyle"></div>
                 </div>
-                <div className="books">
+                <div className="books" id='scrollable'>
+                    <div className='scroll_btn' onClick={scrollPage}></div>
+                    <div>
+                        <div className="book book1"></div>
+                    </div>
                     <div>
                         <div className="book book2"></div>
-                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
                     </div>
                     <div>
                         <div className="book book4"></div>
-                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book1"></div>
+                    </div>
+                    <div>
+                        <div className="book book2"></div>
                     </div>
                     <div>
                         <div className="book book3"></div>
-                        <h3>Book Name</h3>
                     </div>
                     <div>
                         <div className="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
                     </div>
                 </div>
             </section>
@@ -117,38 +102,31 @@ function content() {
                     </div>
                     <div className="forStyle"></div>
                 </div>
-                <div className="books">
+                <div className="books" id='scrollable'>
+                    <div className='scroll_btn' onClick={scrollPage}></div>
+                    <div>
+                        <div className="book book1"></div>
+                    </div>
                     <div>
                         <div className="book book2"></div>
-                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
                     </div>
                     <div>
                         <div className="book book4"></div>
-                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book1"></div>
+                    </div>
+                    <div>
+                        <div className="book book2"></div>
                     </div>
                     <div>
                         <div className="book book3"></div>
-                        <h3>Book Name</h3>
                     </div>
                     <div>
                         <div className="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
                     </div>
                 </div>
             </section>
@@ -161,38 +139,31 @@ function content() {
                     </div>
                     <div className="forStyle"></div>
                 </div>
-                <div className="books">
+                <div className="books" id='scrollable'>
+                    <div className='scroll_btn' onClick={scrollPage}></div>
+                    <div>
+                        <div className="book book1"></div>
+                    </div>
                     <div>
                         <div className="book book2"></div>
-                        <h3>Book Name</h3>
+                    </div>
+                    <div>
+                        <div className="book book3"></div>
                     </div>
                     <div>
                         <div className="book book4"></div>
-                        <h3>Book Name</h3>
                     </div>
                     <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
+                        <div className="book book5"></div>
                     </div>
                     <div>
-                        <div className="book book4"></div>
-                        <h3>Book Name</h3>
+                        <div className="book book6"></div>
                     </div>
                     <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
+                        <div className="book book7"></div>
                     </div>
                     <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book4"></div>
-                        <h3>Book Name</h3>
-                    </div>
-                    <div>
-                        <div className="book book3"></div>
-                        <h3>Book Name</h3>
+                        <div className="book book8"></div>
                     </div>
                 </div>
             </section>
