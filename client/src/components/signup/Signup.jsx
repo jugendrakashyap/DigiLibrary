@@ -38,7 +38,7 @@ function Signup() {
                 <input type="text" name="confirm_password" id="confirm_password" placeholder="Confirm Password" />
 
                 <p id='message'></p>
-                <button type="submit" onClick={handlePostRequest}>Submit</button>
+                <button id='signupBtn' type="submit" onClick={handlePostRequest}>Submit</button>
                 <a href="/login">Go to Login</a>
             </form>
         </div>

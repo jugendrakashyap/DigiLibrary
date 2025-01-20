@@ -37,7 +37,7 @@ function Login() {
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" id="password" onChange={(e) => setPassword(e.target.value)} placeholder="Enter Your Password" required />
 
-                <button type="submit" onClick={handlePostRequest}>Login</button>
+                <button id='loginBtn' type="submit" onClick={handlePostRequest}>Login</button>
                 <a href="/signup">Create account</a>
             </form>
         </div>
