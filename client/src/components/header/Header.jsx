@@ -1,17 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
 
 import '../../css/header.css'
 
 function Header() {
-    const { id } = useParams();
-
     function headerJs() {
-        console.log(id);
-        if(id) {
-            document.getElementById('profile_text').textContent = 'Profile';
-        }
-
         const searchBar = document.getElementById('search_bar');
         const searchOptions = document.getElementById('search_options');
         const searchOption = document.getElementsByClassName('search_option');
@@ -31,26 +23,26 @@ function Header() {
                 searchOptions.style.display = 'none';
             }
         })
-
-        document.getElementById('logo').addEventListener('click', () => {
-            window.location.href = '/';
-        })
-
-        document.getElementById('login_btn').addEventListener('click', () => {
-            window.location.href = '/login';
-        })
-
-        document.getElementById('library_btn').addEventListener('click', () => {
-            window.location.href = '/collections';
-        })
     }
-    // Add event listener to DOMContentLoaded to load the header JS when the page is fully loaded
+
     window.addEventListener('DOMContentLoaded', headerJs);
+
+    function goToHome() {
+        window.location.href = '/';
+    }
+
+    function goToLogin() {
+        window.location.href = '/login';
+    }
+
+    function goToCollections() {
+        window.location.href = '/collections';
+    }
 
     return (
         <>
             <div className="top_header flex">
-                <div className="logo_box flex" id='logo'>
+                <div className="logo_box flex" onClick={goToHome}>
                     <div className="logo_img"></div>
                     <h1><span>digi</span>Library</h1>
                 </div>
@@ -68,11 +60,11 @@ function Header() {
                     </div>
                 </div>
                 <div className="flex buttons">
-                    <div className="flex login_box" id='login_btn'>
+                    <div className="flex login_box" onClick={goToLogin}>
                         <div className="login_btn"></div>
                         <p id='profile_text'>Login</p>
                     </div>
-                    <div className="flex library_box" id='library_btn'>
+                    <div className="flex library_box" onClick={goToCollections}>
                         <div className="library_btn"></div>
                         <p>My Books</p>
                     </div>
