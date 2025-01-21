@@ -49,7 +49,6 @@ function Book() {
 
                                             <span class="star star--small">★</span><span class="star star--small">★</span><span class="star star--small">★</span>
                                             <span class="star star--half star--small">★</span>
-                                            <span itemprop="ratingValue">3.9 (140 ratings)</span>
 
                                             <span class="dot">·</span>
                                         </li>
