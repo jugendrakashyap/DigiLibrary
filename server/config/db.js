@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb://localhost:27017/digiLibrary';
+const URI = 'mongodb+srv://kjugendra63:639871qp@cluster0.uuxzv.mongodb.net/digiLibrary';
 
 function connectDb() {
     mongoose.connect(URI)
