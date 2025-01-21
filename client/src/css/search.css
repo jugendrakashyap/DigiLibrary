@@ -76,36 +76,20 @@
     cursor: pointer;
 }
 
-.item_sec {
+.img {
     height: 100%;
-    width: 135px;
     border-radius: 5px;
-    background-repeat: no-repeat;
-    background-size: contain;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
 }
 
-.color_orange {
-    color: rgb(255, 102, 0);
-}
-
-.item_sec_img1 {
-    background-image: url("../images/books/rules_of_life.jpg");
-}
-
-.item_sec_img2 {
-    background-image: url("../images/books/basic_design.jpg");
-}
-
-.item_sec_img3 {
-    background-image: url("../images/books/stop_thinking_negative.jpg");
-}
-
-.item_sec2 {
-    display: flex;
-    gap: 10px;
+.des_box {
     width: 40%;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .item_sec3 {

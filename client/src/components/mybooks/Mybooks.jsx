@@ -13,14 +13,14 @@ function Mybooks() {
             <div className='labels'>
               <h2><span>Title:</span></h2>
               <p><span>Subtitle:</span></p>
-              <h3><span>Publisher:</span></h3>
+              <p><span>Publisher:</span></p>
               <p><span>Language:</span></p>
               <p><span>Genre:</span></p>
             </div>
             <div className='details'>
               <h2 className='title'></h2>
               <p className='subtitle'></p>
-              <h4 className='publisher'></h4>
+              <p className='publisher'></p>
               <p className='language'></p>
               <p className='genre'></p>
             </div>
@@ -46,14 +46,14 @@ function Mybooks() {
             <div className='labels'>
               <h2><span>Title:</span></h2>
               <p><span>Subtitle:</span></p>
-              <h3><span>Publisher:</span></h3>
+              <p><span>Publisher:</span></p>
               <p><span>Language:</span></p>
               <p><span>Genre:</span></p>
             </div>
             <div className='details'>
               <h2 className='title'></h2>
               <p className='subtitle'></p>
-              <h4 className='publisher'></h4>
+              <p className='publisher'></p>
               <p className='language'></p>
               <p className='genre'></p>
             </div>
@@ -79,14 +79,14 @@ function Mybooks() {
             <div className='labels'>
               <h2><span>Title:</span></h2>
               <p><span>Subtitle:</span></p>
-              <h3><span>Publisher:</span></h3>
+              <p><span>Publisher:</span></p>
               <p><span>Language:</span></p>
               <p><span>Genre:</span></p>
             </div>
             <div className='details'>
               <h2 className='title'></h2>
               <p className='subtitle'></p>
-              <h4 className='publisher'></h4>
+              <p className='publisher'></p>
               <p className='language'></p>
               <p className='genre'></p>
             </div>

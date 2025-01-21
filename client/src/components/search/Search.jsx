@@ -1,37 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import '../../css/search.css'
 
 function Search() {
-    React.useEffect(() => {
+    const [img, setImg] = useState([]);
+    const [title, setTitle] = useState([]);
+    const [subtitle, setSubtitle] = useState([]);
+    const [publisher, setPublisher] = useState([]);
+    const [language, setLanguage] = useState([]);
+    const [genre, setGenre] = useState([]);
+
+    useEffect(() => {
         const fetchData = async () => {
             const bookData = await fetch('http://localhost:8000/search');
             const data = await bookData.json();
-            console.log(data);
 
-            function listBooks() {
-                const title = document.getElementsByClassName('title');
-                const subtitle = document.getElementsByClassName('subtitle');
-                const publisher = document.getElementsByClassName('publisher');
-                const language = document.getElementsByClassName('language');
-                const genre = document.getElementsByClassName('genre');
-                console.log(data[0].title);
-
-                for (let i = 0; i < 1; i++) {
-                    title[i].textContent = data[i].title;
-                    console.log(data[i].title);
-                    subtitle[i].textContent = data[i].subtitle;
-                    publisher[i].textContent = data[i].publisher;
-                    language[i].textContent = data[i].language;
-                    genre[i].textContent = data[i].genre;
-                }
-
-                document.getElementById('item_box').addEventListener('click', () => {
-                    window.location.href = '/book';
-                })
-            }
-            // Add event listener to DOMContentLoaded to load the header JS when the page is fully loaded
-            window.addEventListener('DOMContentLoaded', listBooks());
+            setImg(data.map(book => book.img));
+            setTitle(data.map(book => book.title));
+            setSubtitle(data.map(book => book.subtitle));
+            setPublisher(data.map(book => book.publisher));
+            setLanguage(data.map(book => book.language));
+            setGenre(data.map(book => book.genre));
         }
         fetchData();
     })
@@ -122,87 +111,69 @@ function Search() {
                     </section>
 
                     <section className="listed_items">
-                        <div className="item_box" id='item_box'>
-                            <div className="item_sec item_sec_img1"></div>
+                        <div className="item_box" onClick={() => window.location.href = "/book"}>
+                            <img className="img" src={img[0]} alt='img' />
 
-                            <div className="item_sec2">
-                                <div className='labels'>
-                                    <h2 className='color_orange'>Title:</h2>
-                                    <p className='color_orange'>Subtitle:</p>
-                                    <h3 className='color_orange'>Publisher:</h3>
-                                    <p className='color_orange'>Language:</p>
-                                    <p className='color_orange'>Genre:</p>
-                                </div>
-                                <div className='details'>
-                                    <h2 className='title'></h2>
-                                    <p className='subtitle'></p>
-                                    <h4 className='publisher'></h4>
-                                    <p className='language'></p>
-                                    <p className='genre'></p>
-                                </div>
+                            <div className="des_box">
+                                <h2><span>Title: </span>{title[0]}</h2>
+                                <p><span>Subtitle: </span>{subtitle[0]}</p>
+                                <p><span>Publisher: </span>{publisher[0]}</p>
+                                <p><span>Language: </span>{language[0]}</p>
+                                <p><span>Genre: </span>{genre[0]}</p>
                             </div>
 
                             <div className="item_sec3">
                                 <div className="btns">
-                                    <button className="read_btn" onClick={() => {window.location.href = "/reader"}}>Read now</button>
+                                    <button className="read_btn" onClick={() => { window.location.href = "/reader" }}>Read now</button>
                                     <button className="mybooks_btn">Add to My Books</button>
                                 </div>
                                 <div className="rating">
                                     <h4>Rating</h4>
-                                    <h1 className='color_orange'>★★★★☆</h1>
+                                    <h1><span>★★★★☆</span></h1>
                                     <big>(12345)</big>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="item_box">
-                            <div className="item_sec item_sec_img2"></div>
+                        <div className="item_box" onClick={() => window.location.href = "/book"}>
+                        <img className="img" src={img[0]} alt='img' />
 
-                            <div className="item_sec2">
-                                <div className='labels'>
-                                    <h2 className='color_orange'>Title:</h2>
-                                    <p className='color_orange'>Subtitle:</p>
-                                    <h3 className='color_orange'>Publisher:</h3>
-                                    <p className='color_orange'>Language:</p>
-                                    <p className='color_orange'>Genre:</p>
-                                </div>
-                                <div className='details'>
-                                    <h2 className='title'></h2>
-                                    <p className='subtitle'></p>
-                                    <h4 className='publisher'></h4>
-                                    <p className='language'></p>
-                                    <p className='genre'></p>
-                                </div>
+                            <div className="des_box">
+                                <h2><span>Title: </span>{title[0]}</h2>
+                                <p><span>Subtitle: </span>{subtitle[0]}</p>
+                                <p><span>Publisher: </span>{publisher[0]}</p>
+                                <p><span>Language: </span>{language[0]}</p>
+                                <p><span>Genre: </span>{genre[0]}</p>
                             </div>
 
                             <div className="item_sec3">
                                 <div className="btns">
-                                    <button className="read_btn" onClick={() => {window.location.href = "/reader"}}>Read now</button>
+                                    <button className="read_btn" onClick={() => { window.location.href = "/reader" }}>Read now</button>
                                     <button className="mybooks_btn">Add to My Books</button>
                                 </div>
                                 <div className="rating">
                                     <h4>Rating</h4>
-                                    <h1 className='color_orange'>★★★★☆</h1>
+                                    <h1><span>★★★★☆</span></h1>
                                     <big>(12345)</big>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="item_box">
+                        <div className="item_box" onClick={() => window.location.href = "/book"}>
                             <div className="item_sec item_sec_img3"></div>
 
                             <div className="item_sec2">
                                 <div className='labels'>
-                                    <h2 className='color_orange'>Title:</h2>
-                                    <p className='color_orange'>Subtitle:</p>
-                                    <h3 className='color_orange'>Publisher:</h3>
-                                    <p className='color_orange'>Language:</p>
-                                    <p className='color_orange'>Genre:</p>
+                                    <h2><span>Title:</span></h2>
+                                    <p><span>Subtitle:</span></p>
+                                    <p><span>Publisher:</span></p>
+                                    <p><span>Language:</span></p>
+                                    <p><span>Genre:</span></p>
                                 </div>
                                 <div className='details'>
                                     <h2 className='title'></h2>
                                     <p className='subtitle'></p>
-                                    <h4 className='publisher'></h4>
+                                    <p className='publisher'></p>
                                     <p className='language'></p>
                                     <p className='genre'></p>
                                 </div>
@@ -210,12 +181,12 @@ function Search() {
 
                             <div className="item_sec3">
                                 <div className="btns">
-                                    <button className="read_btn" onClick={() => {window.location.href = "/reader"}}>Read now</button>
+                                    <button className="read_btn" onClick={() => { window.location.href = "/reader" }}>Read now</button>
                                     <button className="mybooks_btn">Add to My Books</button>
                                 </div>
                                 <div className="rating">
                                     <h4>Rating</h4>
-                                    <h1 className='color_orange'>★★★★☆</h1>
+                                    <h1><span>★★★★☆</span></h1>
                                     <big>(12345)</big>
                                 </div>
                             </div>
