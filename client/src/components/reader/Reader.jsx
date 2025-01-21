@@ -27,7 +27,7 @@ function Reader() {
     n--;
   }
   return (
-    <div className='book'>
+    <div className='pages'>
       <div className='page'>
         <p>page1 ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad nobis vero consectetur magnam corporis rerum numquam sapiente, ullam sunt repellendus? Officia at nemo rerum, quis hic libero quia laudantium.</p><br />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, incidunt alias enim corporis explicabo, modi quisquam magnam est commodi quod earum aspernatur quos rerum quidem quas eveniet nulla fuga non.</p><br />
