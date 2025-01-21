@@ -22,8 +22,6 @@ function Header() {
         })
     }
 
-
-
     function goToHome() {
         window.location.href = '/';
     }

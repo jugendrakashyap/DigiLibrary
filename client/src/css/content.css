@@ -8,6 +8,7 @@ main {
   height: 65vh;
   display: flex;
   overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .slide {
@@ -91,6 +92,7 @@ main {
   height: fit-content;
   gap: 30px;
   overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .book {
