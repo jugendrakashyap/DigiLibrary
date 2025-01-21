@@ -24,26 +24,35 @@ function Book() {
                     </section>
 
                     <section className="description_section">
+                        <div className="Navbar">
+                            
+                        </div>
 
                         <div className="information">
                             {/* <h1 >This book is written by me vinod samajh rahe ho</h1> */}
                             <div class="work-title-and-author desktop">
                                 <span>
+                                   
+                                    <div className="Heading"><h1 class="work-title" itemprop="name">Time Management</h1></div>
                                     <div class="work-line">
                                         An edition of <a href="#">Time Management (Build your future to controll your waste of time)</a>
                                         <span class="first-published-date" title="First published in 2025">
                                             (2025)
                                         </span>
                                     </div>
-                                    <h1 class="work-title" itemprop="name">Time Management</h1>
 
                                     <div class="work-line">
                                         1st ed.
                                     </div>
-                                    
-
-
-                                    <ul class="readers-stats  " itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
+                                </span>
+                                <div className="Book-discription"><br /><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, assumenda quo. Quibusdam animi, voluptatem eligendi vitae ipsum ducimus dolore ab consequatur asperiores unde voluptas necessitatibus ad libero sequi voluptate modi nesciunt expedita deserunt voluptatum et exercitationem, laborum nisi repudiandae similique. Eaque delectus aliquid modi inventore, reiciendis quas rerum ex obcaecati!</p></div>
+                                <br />
+                                <div className="sec-container">
+                                    <div>hellow</div>
+                                    <div>hellow</div>
+                                    <div>hellow</div>
+                                </div>
+                                <ul class="readers-stats  " itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
                                         <li class="avg-ratings" onclick="location.href='#starRatingSection';" data-ol-link-track="StarRating|StatsComponentClick">
 
 
@@ -56,8 +65,6 @@ function Book() {
                                         <li class="reading-log-stat"><span class="readers-stats__stat">87</span> <span class="readers-stats__label">Currently reading</span></li>
                                         <li class="reading-log-stat"><span class="readers-stats__stat">212</span> <span class="readers-stats__label">Have read</span></li>
                                     </ul>
-
-                                </span>
 
                             </div>
                         </div>

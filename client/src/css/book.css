@@ -50,13 +50,19 @@
 
 /* these line written by kashish  */
 
+.Navbar{
+    height: 100px;
+    
+
+    background-color: #82966b;
+}
 
 
 .work-title-and-author {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color:rgba(240, 240, 240, 0.8);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,6 +163,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.Book-discription,p{
+    margin: 20px 0;
+    font-size: 16px;
+    color: #333333;
 }
 
 
