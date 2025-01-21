@@ -40,11 +40,7 @@ function Book() {
                                     <div class="work-line">
                                         1st ed.
                                     </div>
-                                    <h2 class="edition-byline">
-
-                                        by <a href="/authors/OL233594A/Robert_Jordan" itemprop="author">OLIVIA  WILSON</a>
-
-                                    </h2>
+                                    
 
 
                                     <ul class="readers-stats  " itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
