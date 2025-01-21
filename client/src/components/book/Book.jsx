@@ -24,50 +24,25 @@ function Book() {
                     </section>
 
                     <section className="description_section">
-                        <div className="Navbar">
-                            
-                        </div>
+                        <div className='Book-content'>
+                            <span>
+                                <div className="heading"><h1 className='Book-title'>Time Management</h1></div>
+                                <div class="subheading">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis esse impedit placeat, </p>
 
-                        <div className="information">
-                            {/* <h1 >This book is written by me vinod samajh rahe ho</h1> */}
-                            <div class="work-title-and-author desktop">
-                                <span>
-                                   
-                                    <div className="Heading"><h1 class="work-title" itemprop="name">Time Management</h1></div>
-                                    <div class="work-line">
-                                        An edition of <a href="#">Time Management (Build your future to controll your waste of time)</a>
-                                        <span class="first-published-date" title="First published in 2025">
-                                            (2025)
-                                        </span>
-                                    </div>
-
-                                    <div class="work-line">
-                                        1st ed.
-                                    </div>
-                                </span>
-                                <div className="Book-discription"><br /><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, assumenda quo. Quibusdam animi, voluptatem eligendi vitae ipsum ducimus dolore ab consequatur asperiores unde voluptas necessitatibus ad libero sequi voluptate modi nesciunt expedita deserunt voluptatum et exercitationem, laborum nisi repudiandae similique. Eaque delectus aliquid modi inventore, reiciendis quas rerum ex obcaecati!</p></div>
-                                <br />
-                                <div className="sec-container">
-                                    <div>hellow</div>
-                                    <div>hellow</div>
-                                    <div>hellow</div>
                                 </div>
-                                <ul class="readers-stats  " itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
-                                        <li class="avg-ratings" onclick="location.href='#starRatingSection';" data-ol-link-track="StarRating|StatsComponentClick">
-
-
-                                            <span class="star star--small">★</span><span class="star star--small">★</span><span class="star star--small">★</span>
-                                            <span class="star star--half star--small">★</span>
-
-                                            <span class="dot">·</span>
-                                        </li>
-                                        <li class="reading-log-stat"><span class="readers-stats__stat">924</span> <span class="readers-stats__label">Want to read</span></li>
-                                        <li class="reading-log-stat"><span class="readers-stats__stat">87</span> <span class="readers-stats__label">Currently reading</span></li>
-                                        <li class="reading-log-stat"><span class="readers-stats__stat">212</span> <span class="readers-stats__label">Have read</span></li>
-                                    </ul>
-
+                                <h2>By:<a href="#">OLIVIA WILSON</a></h2>
+                            </span>
+                            <div className="rating-box">
+                            <div className='rating-box1'>
+                                <div><div id="rate"><h1>3.9 x</h1></div></div>
                             </div>
+                            <div className='rating-box2'><div id="Ebook">Ebook</div></div>
+                            <div className='rating-box3'><div id="pages">pages</div></div>
+                            </div>
+
                         </div>
+
                     </section>
                 </div>
             </main>
