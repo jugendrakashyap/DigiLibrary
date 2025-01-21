@@ -71,9 +71,10 @@ main {
 
 .scroll_btn {
   width: 60px;
-  height: 150px;
-  border-radius: 5px;
-  background-color: white;
+  height: 120px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgba(233, 233, 233, 0.925);
   box-shadow: -5px 0px 4px 2px rgb(92, 92, 92);
   background-image: url(https://cdn-icons-png.flaticon.com/512/130/130884.png);
   background-repeat: no-repeat;
@@ -83,6 +84,12 @@ main {
   cursor: pointer;
   position: absolute;
   right: 0px;
+}
+
+.left_scroll_btn {
+  display: none;
+  left: 0px;
+  transform: rotate(180deg);
 }
 
 .books {
@@ -106,6 +113,11 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 }
 
 .book1 {
