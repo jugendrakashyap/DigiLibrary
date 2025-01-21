@@ -3,29 +3,26 @@ import React from 'react'
 import '../../css/header.css'
 
 function Header() {
-    function headerJs() {
-        const searchBar = document.getElementById('search_bar');
-        const searchOptions = document.getElementById('search_options');
+    function showOptions() {
+        const searchOpts = document.getElementById('search_options');
+        searchOpts.style.display = 'block';
+
         const searchOption = document.getElementsByClassName('search_option');
-
-        searchBar.addEventListener('focus', () => {
-            searchOptions.style.display = 'block';
-        })
-
         for (let i = 0; i < searchOption.length; i++) {
             searchOption[i].addEventListener('click', () => {
                 window.location.href = '/search';
             })
         }
 
+        const searchBar = document.getElementById('search_bar');
         document.addEventListener('click', (event) => {
-            if (!searchBar.contains(event.target) && !searchOptions.contains(event.target)) {
-                searchOptions.style.display = 'none';
+            if (!searchBar.contains(event.target) && !searchOpts.contains(event.target)) {
+                searchOpts.style.display = 'none';
             }
         })
     }
-    
-    // headerJs();
+
+
 
     function goToHome() {
         window.location.href = '/';
@@ -47,7 +44,7 @@ function Header() {
                     <h1><span>digi</span>Library</h1>
                 </div>
                 <div className="search_box" id="search_box">
-                    <input className="search_bar" id="search_bar" type="text" placeholder="Search for a ebook" />
+                    <input className="search_bar" id="search_bar" type="text" placeholder="Search for a ebook" onFocus={showOptions} />
                     <div className="search_options" id="search_options">
                         <p className="search_option">Pride and Prejudice</p>
                         <p className="search_option">The Great Gatsby</p>
