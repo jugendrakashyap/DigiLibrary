@@ -47,3 +47,116 @@
     height: 15%;
     background-color: rgb(255, 102, 0);
 }
+
+/* these line written by kashish  */
+
+
+
+.work-title-and-author {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Subtitle */
+.work-line {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.work-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin: 10px 0;
+}
+
+.edition-byline {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.edition-byline a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.edition-byline a:hover {
+    text-decoration: underline;
+}
+
+/* First Published Date */
+.first-published-date {
+    font-size: 14px;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* Reader Stats */
+.readers-stats {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.readers-stats li {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.readers-stats li:hover {
+    color: #007bff;
+}
+
+.readers-stats__stat {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+.readers-stats__label {
+    color: #666;
+}
+
+.dot {
+    margin: 0 5px;
+    color: #bbb;
+}
+
+/* Star Ratings */
+.star {
+    color: #f5a623; /* Gold color for stars */
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+.star--half::after {
+    content: '☆'; /* Half-star represented by an outline */
+    color: #f5a623;
+    position: relative;
+    left: -6px;
+}
+
+/* Links Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
