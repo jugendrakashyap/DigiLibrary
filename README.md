@@ -1,6 +1,6 @@
-#digiLibrary
+# digiLibrary
 
-##Description
+## Description
 digiLibrary is a modern digital library platform designed to provide users with seamless access to a wide variety of eBooks. Whether you're a student, a professional, or an avid reader, digiLibrary offers a curated collection of eBooks across multiple genres and disciplines, making reading more accessible, convenient, and enjoyable.
 
 ## Key Features
