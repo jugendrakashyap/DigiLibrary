@@ -1,11 +1,11 @@
-<h1 style="color:blue;">User Authentication API</h1>
+#digiLibrary
 
-## <span style="color:purple;">Description</span>
-This project provides a user authentication system using Node.js, Express, JWT, and bcrypt.
+##Description
+digiLibrary is a modern digital library platform designed to provide users with seamless access to a wide variety of eBooks. Whether you're a student, a professional, or an avid reader, digiLibrary offers a curated collection of eBooks across multiple genres and disciplines, making reading more accessible, convenient, and enjoyable.
 
-## <span style="color:green;">Features</span>
-- User registration with secure password hashing.
-- User login with password validation.
-- JWT token generation and verification.
-- Secure cookie storage for authentication tokens.
-- Protected routes accessible only to authenticated users.
+## Key Features
+-    Extensive Collection: Explore eBooks from diverse categories, including fiction, non-fiction, academic resources, and more.
+-    User-Friendly Interface: Navigate easily through the intuitive and responsive design.
+-    Search & Discover: Advanced search and recommendations to find your next great read.
+-    Multi-Device Support: Access your library on any device, anytime, anywhere.
+-    Personalized Experience: Save favorites, highlight text, and add notes to create a unique reading experience.
