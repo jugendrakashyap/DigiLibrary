@@ -1,1 +1,1 @@
-<h1><span style='color: orange'>digi</span>Library</h1>
+<h1><span style='color: orange;'>digi</span>Library</h1>
