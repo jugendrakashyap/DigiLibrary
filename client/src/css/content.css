@@ -90,6 +90,7 @@ main {
   display: none;
   left: 0px;
   transform: rotate(180deg);
+  z-index: 1;
 }
 
 .books {

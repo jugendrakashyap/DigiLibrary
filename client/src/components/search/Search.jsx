@@ -5,7 +5,6 @@ import '../../css/search.css'
 function Search() {
     const [img, setImg] = useState([]);
     const [title, setTitle] = useState([]);
-    const [subtitle, setSubtitle] = useState([]);
     const [publisher, setPublisher] = useState([]);
     const [language, setLanguage] = useState([]);
     const [genre, setGenre] = useState([]);
@@ -17,7 +16,6 @@ function Search() {
 
             setImg(data.map(book => book.img));
             setTitle(data.map(book => book.title));
-            setSubtitle(data.map(book => book.subtitle));
             setPublisher(data.map(book => book.publisher));
             setLanguage(data.map(book => book.language));
             setGenre(data.map(book => book.genre));
@@ -116,7 +114,6 @@ function Search() {
 
                             <div className="des_box">
                                 <h2><span>Title: </span>{title[0]}</h2>
-                                <p><span>Subtitle: </span>{subtitle[0]}</p>
                                 <p><span>Publisher: </span>{publisher[0]}</p>
                                 <p><span>Language: </span>{language[0]}</p>
                                 <p><span>Genre: </span>{genre[0]}</p>
@@ -136,14 +133,13 @@ function Search() {
                         </div>
 
                         <div className="item_box" onClick={() => window.location.href = "/book"}>
-                        <img className="img" src={img[0]} alt='img' />
+                        <img className="img" src={img[1]} alt='img' />
 
                             <div className="des_box">
-                                <h2><span>Title: </span>{title[0]}</h2>
-                                <p><span>Subtitle: </span>{subtitle[0]}</p>
-                                <p><span>Publisher: </span>{publisher[0]}</p>
-                                <p><span>Language: </span>{language[0]}</p>
-                                <p><span>Genre: </span>{genre[0]}</p>
+                                <h2><span>Title: </span>{title[1]}</h2>
+                                <p><span>Publisher: </span>{publisher[1]}</p>
+                                <p><span>Language: </span>{language[1]}</p>
+                                <p><span>Genre: </span>{genre[1]}</p>
                             </div>
 
                             <div className="item_sec3">
@@ -160,23 +156,13 @@ function Search() {
                         </div>
 
                         <div className="item_box" onClick={() => window.location.href = "/book"}>
-                            <div className="item_sec item_sec_img3"></div>
+                        <img className="img" src={img[2]} alt='img' />
 
-                            <div className="item_sec2">
-                                <div className='labels'>
-                                    <h2><span>Title:</span></h2>
-                                    <p><span>Subtitle:</span></p>
-                                    <p><span>Publisher:</span></p>
-                                    <p><span>Language:</span></p>
-                                    <p><span>Genre:</span></p>
-                                </div>
-                                <div className='details'>
-                                    <h2 className='title'></h2>
-                                    <p className='subtitle'></p>
-                                    <p className='publisher'></p>
-                                    <p className='language'></p>
-                                    <p className='genre'></p>
-                                </div>
+                            <div className="des_box">
+                                <h2><span>Title: </span>{title[2]}</h2>
+                                <p><span>Publisher: </span>{publisher[2]}</p>
+                                <p><span>Language: </span>{language[2]}</p>
+                                <p><span>Genre: </span>{genre[2]}</p>
                             </div>
 
                             <div className="item_sec3">

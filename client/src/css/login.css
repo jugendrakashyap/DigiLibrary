@@ -3,6 +3,7 @@
     height: 100vh;
     padding: 100px 0 50px 0;
     background-color: rgba(143, 143, 143, 0.664);
+    background: url('https://www.publishcentral.com.au/wp-content/uploads/2023/05/book-pile-of-must-read-books-scaled1.jpeg') no-repeat center /cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +17,8 @@ form {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    gap: 10px;
     border-radius: 10px;
+    box-shadow: 0 0 20px 20px #363636bd;
 }
 
 input {
@@ -27,9 +28,13 @@ input {
     margin: 5px;
 }
 
+.input {
+    margin-top: 15px;
+}
+
 #loginBtn, #signupBtn {
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px 0;
     background-color: rgb(255, 102, 0);
     color: white;
     border: none;
@@ -41,16 +46,5 @@ input {
 
 label {
     font-size: 1rem;
-}
-
-#signup_btn, #gotoLogin{
-    margin-top: 10px;
-    color: #6005b4;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#message {
-    display: none;
-    color: rgb(255, 102, 0);
+    margin-top: 20px;
 }

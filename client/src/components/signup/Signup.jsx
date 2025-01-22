@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import axios from 'axios';
 
 import '../../css/login.css'
@@ -8,20 +8,45 @@ function Signup() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+
+    const [nameStatus, setNameStatus] = useState('');
+    const [emailStatus, setEmailStatus] = useState('');
+    const [passwordStatus, setPasswordStatus] = useState('');
+    const [confirmPasswordStatus, setConfirmPasswordStatus] = useState('');
+
+    const [message, setMessage] = useState('');
+
 
     const handlePostRequest = (event) => {
         event.preventDefault();
+
+        setNameStatus(name === '' ? 'Name is required' : '');
+        setEmailStatus(email === '' ? 'Email is required' : '');
+        setPasswordStatus(password === '' ? 'Password is required' : '');
+        setConfirmPasswordStatus(confirmPassword === '' ? 'Confirm Password is required' : '');
+
+        if (!name || !email || !password || !confirmPassword) return;
+        if (!(password === confirmPassword)) {
+            setMessage('Passwords do not match');
+            return;
+        }
 
         axios.post('http://localhost:8000/signup', {
             name: name,
             email: email,
             phone: phone,
-            password: password
+            password: password,
+            confirmPassword: confirmPassword,
         })
             .then((res) => {
-                document.getElementById('message').textContent = res.data;
-                console.log('Response: ' + res.data);
-                document.getElementById('signupForm').reset();
+                setMessage(res.data.message);
+                console.log('Response: ' + res.data.message);
+
+                if (res.data.registration) {
+                    document.getElementById('signupForm').reset();
+                    document.getElementById('message').style.color = 'green';
+                }
             })
             .catch((error) => {
                 console.error('Error: ' + error);
@@ -31,15 +56,23 @@ function Signup() {
         <div id='signup_form'>
             <form method='POST' id="signupForm">
                 <h1>Register</h1>
-                <input type="text" name="name" id="name" onChange={(e) => setName(e.target.value)} placeholder="Fullname" required />
-                <input type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-                <input type="number" name="phone" id="phone" onChange={(e) => setPhone(e.target.value)} placeholder="Phone Number" />
-                <input type="password" name="password" id="password" onChange={(e) => setPassword(e.target.value)} placeholder="Create Password" />
-                <input type="text" name="confirm_password" id="confirm_password" placeholder="Confirm Password" />
+                <input type="text" name="name" className='input' id="name" onChange={(e) => setName(e.target.value)} placeholder="Fullname" />
+                <p style={{ color: "red", fontSize: '15px' }}>{nameStatus}</p>
 
-                <p id='message'></p>
+                <input type="email" name="email" className='input' id="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+                <p style={{ color: "red", fontSize: '15px' }}>{emailStatus}</p>
+
+                <input type="number" name="phone" className='input' id="phone" onChange={(e) => setPhone(e.target.value)} placeholder="Phone Number" />
+
+                <input type="password" name="password" className='input' id="password" onChange={(e) => setPassword(e.target.value)} placeholder="Create Password" />
+                <p style={{ color: "red", fontSize: '15px' }}>{passwordStatus}</p>
+
+                <input type="text" name="confirm_password" className='input' id="confirm_password" onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Confirm Password" />
+                <p style={{ color: "red", fontSize: '15px' }}>{confirmPasswordStatus}</p>
+
                 <button id='signupBtn' type="submit" onClick={handlePostRequest}>Submit</button>
-                <a href="/login">Go to Login</a>
+                <p style={{ color: "red", fontSize: '1rem' }} id='message'>{message}</p>
+                <a href="/login"> Login</a>
             </form>
         </div>
     )
