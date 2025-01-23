@@ -84,13 +84,13 @@ main {
   cursor: pointer;
   position: absolute;
   right: 0px;
+  z-index: 1;
 }
 
 .left_scroll_btn {
   display: none;
   left: 0px;
   transform: rotate(180deg);
-  z-index: 1;
 }
 
 .books {

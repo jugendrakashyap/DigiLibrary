@@ -93,7 +93,7 @@ function content() {
                     <div className="forStyle"></div>
                 </div>
                 <div className="books" id='scrollable'>
-                    <div className='scroll_btn' onClick={scrollLeft}></div>
+                <div className='scroll_btn left_scroll_btn' id='scroll_left_btn' onClick={scrollLeft}></div>
                     <div>
                         <div className="book book1" onClick={() => window.location.href = "/book"}></div>
                     </div>
@@ -118,6 +118,7 @@ function content() {
                     <div>
                         <div className="book book4" onClick={() => window.location.href = "/book"}></div>
                     </div>
+                    <div className='scroll_btn right_scroll_btn' id='scroll_right_btn' onClick={scrollRight}></div>
                 </div>
             </section>
 
@@ -130,7 +131,7 @@ function content() {
                     <div className="forStyle"></div>
                 </div>
                 <div className="books" id='scrollable'>
-                    <div className='scroll_btn' onClick={scrollLeft}></div>
+                <div className='scroll_btn left_scroll_btn' id='scroll_left_btn' onClick={scrollLeft}></div>
                     <div>
                         <div className="book book1" onClick={() => window.location.href = "/book"}></div>
                     </div>
@@ -155,6 +156,7 @@ function content() {
                     <div>
                         <div className="book book4" onClick={() => window.location.href = "/book"}></div>
                     </div>
+                    <div className='scroll_btn right_scroll_btn' id='scroll_right_btn' onClick={scrollRight}></div>
                 </div>
             </section>
 
@@ -167,7 +169,7 @@ function content() {
                     <div className="forStyle"></div>
                 </div>
                 <div className="books" id='scrollable'>
-                    <div className='scroll_btn' onClick={scrollLeft}></div>
+                <div className='scroll_btn left_scroll_btn' id='scroll_left_btn' onClick={scrollLeft}></div>
                     <div>
                         <div className="book book1" onClick={() => window.location.href = "/book"}></div>
                     </div>
@@ -192,6 +194,7 @@ function content() {
                     <div>
                         <div className="book book8" onClick={() => window.location.href = "/book"}></div>
                     </div>
+                    <div className='scroll_btn right_scroll_btn' id='scroll_right_btn' onClick={scrollRight}></div>
                 </div>
             </section>
         </main>

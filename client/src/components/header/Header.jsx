@@ -1,8 +1,17 @@
-import React from 'react'
-
+import { React,useState,useEffect } from 'react';
 import '../../css/header.css'
 
 function Header() {
+
+
+    const [isLoggedIn,setIsLoggedIn]=useState(false)
+        useEffect(()=>{
+            const tokenavailable=window.localStorage.getItem('token')
+            if(tokenavailable){
+                setIsLoggedIn(true)
+            }
+    
+        },[])
     function showOptions() {
         const searchOpts = document.getElementById('search_options');
         searchOpts.style.display = 'block';
@@ -57,8 +66,11 @@ function Header() {
                 <div className="flex buttons">
                     <div className="flex login_box" onClick={goToLogin}>
                         <div className="login_btn"></div>
-                        <p id='profile_text'>Login</p>
-                    </div>
+{                        
+    isLoggedIn?  <p id='profile_text'>Profile</p>
+    :
+    <p id='profile_text'>login</p>
+}                    </div>
                     <div className="flex library_box" onClick={goToCollections}>
                         <div className="library_btn"></div>
                         <p>My Books</p>

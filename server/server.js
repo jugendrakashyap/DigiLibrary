@@ -33,7 +33,7 @@ app.post('/login', async (req, res) => {
         const token = jwt.sign({ email }, SECRET_KEY, { expiresIn: '1h' });
         console.log('token: ', token);
 
-        res.cookie('token', token, { expiresIn: '1h' }).send({ message: 'Logged in successfully', login: true });
+        res.send({ message: 'Logged in successfully', login: true, token: token });
     }
     catch (error) {
         console.log('erro: ', error);

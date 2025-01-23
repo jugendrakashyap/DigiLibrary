@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
+// import { useNavigate } from "react-router-dom";
 
 import '../../css/login.css'
 
@@ -26,10 +27,17 @@ function Login() {
         })
             .then((res) => {
                 setMessage(res.data.message);
+
+                const token = window.localStorage.getItem('token');
+                if (!token) {
+                    window.localStorage.setItem("token", res.data.token);
+                }
+
                 console.log('Response: ' + res.data.message);
-                if (res.data.login){
+                if (res.data.login) {
                     document.getElementById('loginForm').reset();
                     document.getElementById('message').style.color = 'green';
+                    window.location.href = '/';
                 }
             })
             .catch((error) => {
