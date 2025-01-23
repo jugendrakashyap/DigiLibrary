@@ -1,17 +1,17 @@
-import { React,useState,useEffect } from 'react';
+import { React, useState, useEffect } from 'react';
 import '../../css/header.css'
 
 function Header() {
 
 
-    const [isLoggedIn,setIsLoggedIn]=useState(false)
-        useEffect(()=>{
-            const tokenavailable=window.localStorage.getItem('token')
-            if(tokenavailable){
-                setIsLoggedIn(true)
-            }
-    
-        },[])
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    useEffect(() => {
+        const tokenavailable = window.localStorage.getItem('token')
+        if (tokenavailable) {
+            setIsLoggedIn(true)
+        }
+
+    }, [])
     function showOptions() {
         const searchOpts = document.getElementById('search_options');
         searchOpts.style.display = 'block';
@@ -31,14 +31,6 @@ function Header() {
         })
     }
 
-    function goToHome() {
-        window.location.href = '/';
-    }
-
-    function goToLogin() {
-        window.location.href = '/login';
-    }
-
     function goToCollections() {
         window.location.href = '/collections';
     }
@@ -46,7 +38,7 @@ function Header() {
     return (
         <>
             <div className="top_header flex">
-                <div className="logo_box flex" onClick={goToHome}>
+                <div className="logo_box flex" onClick={() => window.location.href = '/'}>
                     <div className="logo_img"></div>
                     <h1><span>digi</span>Library</h1>
                 </div>
@@ -64,14 +56,18 @@ function Header() {
                     </div>
                 </div>
                 <div className="flex buttons">
-                    <div className="flex login_box" onClick={goToLogin}>
-                        <div className="login_btn"></div>
-{                        
-    isLoggedIn?  <p id='profile_text'>Profile</p>
-    :
-    <p id='profile_text'>login</p>
-}                    </div>
-                    <div className="flex library_box" onClick={goToCollections}>
+                    {
+                        isLoggedIn ? <button className="goto_Login" onClick={() => window.location.href = '/profile'}>
+                                        <img class='loginBtnImg' src="images/profile.png" alt="ico" />
+                                        <p>Profile</p>
+                                    </button>
+                            :
+                                    <button className="goto_Login" onClick={() => window.location.href = '/login'}>
+                                        <img class='loginBtnImg' src="images/profile.png" alt="ico" />
+                                        <p>Login</p>
+                                    </button>
+                    }
+                    <div className="flex library_box" onClick={() => window.location.href = '/collections'}>
                         <div className="library_btn"></div>
                         <p>My Books</p>
                     </div>

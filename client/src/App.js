@@ -13,6 +13,7 @@ import Search from './components/search/Search';
 import Book from './components/book/Book';
 import Mybooks from './components/mybooks/Mybooks';
 import Reader from './components/reader/Reader';
+import Profile from './components/profile/Profile';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/book" element={<><header><Header /><Navbar /></header> <Book /><Footer /> </>} />
         <Route path="/collections" element={<><header><Header /><Navbar /></header> <Mybooks /> </>} />
         <Route path="/reader" element={<><header><Header /></header> <Reader /> </>} />
+        <Route path="/profile" element={ <Profile />} />
 
       </Routes>
     </Router>
