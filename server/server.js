@@ -30,7 +30,7 @@ app.post('/login', async (req, res) => {
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) return res.send({ message: 'Invalid Username or Password' });
 
-        const token = jwt.sign({ email }, SECRET_KEY, { expiresIn: '1h' });
+        const token = jwt.sign({ email }, SECRET_KEY, { expiresIn: '5m' });
         console.log('token: ', token);
 
         res.send({ message: 'Logged in successfully', login: true, token: token });

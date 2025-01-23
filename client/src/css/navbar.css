@@ -1,6 +1,9 @@
 .navbar {
-  padding-right: 30px;
+  height: 40px;
   background-color: white;
+  border-bottom: 1px solid #ccc;
+  width: 100vw;
+  padding-right: 30px;
 }
 
 .dropdown-toggle {
@@ -9,19 +12,20 @@
   text-align: center;
   display: flex;
   justify-content: flex-end;
-  width: 100vw;
+  gap: 1.5vw;
 }
 
 .dropdown-menu {
   display: inline-block;
-  line-height: 5vh;
 }
 
 .option {
-  padding: 7px 0 7px 20px;
+  padding: 0px 0 0px 20px;
   list-style-type: none;
   cursor: pointer;
   text-align: left;
+  height: 45px;
+  line-height: 45px;
 }
 
 .option:hover {
@@ -43,10 +47,9 @@
   justify-content: center;
   align-items: center;
   width: fit-content;
-  height: 50px;
+  height: 40px;
   border: none;
   cursor: pointer;
-  margin-right: 1vw;
 }
 
 @media (max-width: 1400px) {
@@ -70,4 +73,9 @@
 
 .dropdown-menu:hover .menu {
   border-bottom: 0.5vh solid rgb(255, 102, 0);
+}
+
+.dropdown-menu:hover .mini-menu {
+  transform: rotate(-90deg);
+  transition: 0.7s;
 }

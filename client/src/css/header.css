@@ -16,20 +16,18 @@ span {
 }
 
 .top_header {
-  padding-top: 5px;
+  padding: 0px 30px;
+
 }
 
 .logo_box {
   cursor: pointer;
-  margin-left: 2vw;
 }
 
 .logo_img {
   width: 50px;
   height: 45px;
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin-right: 5px;
 }
 
 .search_bar {
