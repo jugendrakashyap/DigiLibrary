@@ -28,10 +28,7 @@ function Login() {
             .then((res) => {
                 setMessage(res.data.message);
 
-                const token = window.localStorage.getItem('token');
-                if (!token) {
-                    window.localStorage.setItem("token", res.data.token);
-                }
+                localStorage.setItem("token", res.data.token);
 
                 console.log('Response: ' + res.data.message);
                 if (res.data.login) {

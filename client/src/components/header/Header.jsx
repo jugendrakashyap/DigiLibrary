@@ -1,17 +1,29 @@
-import { React, useState, useEffect } from 'react';
+import { React } from 'react';
+import { jwtDecode } from "jwt-decode";
+
 import '../../css/header.css'
 
 function Header() {
+    let isLoggedIn = false;
+    const token = localStorage.getItem("token");
 
+    if (token) {
+        isLoggedIn = true;
+        const decoded = jwtDecode(token);
+        const currentTime = Math.floor(Date.now() / 1000);
+        console.log("Current time:", currentTime);
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
-    useEffect(() => {
-        const tokenavailable = window.localStorage.getItem('token')
-        if (tokenavailable) {
-            setIsLoggedIn(true)
+        if (decoded.exp < currentTime) {
+            console.log("Token expired, logging out...");
+            localStorage.removeItem("token"); // Clear expired token
+            window.location.href = "/login";
+        } else {
+            console.log("Token is valid!");
         }
+    } else {
+        console.log("No token found, please log in.");
+    }
 
-    }, [])
     function showOptions() {
         const searchOpts = document.getElementById('search_options');
         searchOpts.style.display = 'block';
@@ -30,16 +42,11 @@ function Header() {
             }
         })
     }
-
-    function goToCollections() {
-        window.location.href = '/collections';
-    }
-
     return (
         <>
             <div className="top_header flex">
                 <div className="logo_box flex" onClick={() => window.location.href = '/'}>
-                    <div className="logo_img"></div>
+                    <img className="logo_img" src="images/logo.png" alt="logo" />
                     <h1><span>digi</span>Library</h1>
                 </div>
                 <div className="search_box" id="search_box">
@@ -58,19 +65,22 @@ function Header() {
                 <div className="flex buttons">
                     {
                         isLoggedIn ? <button className="goto_Login" onClick={() => window.location.href = '/profile'}>
-                                        <img class='loginBtnImg' src="images/profile.png" alt="ico" />
-                                        <p>Profile</p>
-                                    </button>
+                            <img className='loginBtnImg' src="images/profile.png" alt="ico" />
+                            <p>Profile</p>
+                        </button>
                             :
-                                    <button className="goto_Login" onClick={() => window.location.href = '/login'}>
-                                        <img class='loginBtnImg' src="images/profile.png" alt="ico" />
-                                        <p>Login</p>
-                                    </button>
+                            <button className="goto_Login" onClick={() => window.location.href = '/login'}>
+                                <img className='loginBtnImg' src="images/profile.png" alt="ico" />
+                                <p>Login</p>
+                            </button>
                     }
-                    <div className="flex library_box" onClick={() => window.location.href = '/collections'}>
-                        <div className="library_btn"></div>
-                        <p>My Books</p>
-                    </div>
+                    {
+                        isLoggedIn ? <div className="flex library_box" onClick={() => window.location.href = '/collections'}>
+                            <div className="library_btn"></div>
+                            <p>My Books</p>
+                        </div>
+                            : null
+                    }
                 </div>
             </div>
         </>
