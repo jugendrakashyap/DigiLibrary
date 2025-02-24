@@ -4,12 +4,13 @@ const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
+const helmet = require('helmet');
 
 require('dotenv').config();
 
 const connectDb = require('./config/db');
-const bookModel = require('./model/bookSchema');
-const userModel = require('./model/userSchema');
+const bookModel = require('./models/bookSchema');
+const userModel = require('./models/userSchema');
 
 const app = express();
 const SECRET_KEY = 'process.env.SECRET_KEY';
@@ -17,7 +18,8 @@ const SECRET_KEY = 'process.env.SECRET_KEY';
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({ origin: "https://digi-library-drab.vercel.app" }));
+app.use(helmet());
 
 connectDb();
 
