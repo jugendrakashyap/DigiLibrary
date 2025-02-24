@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import '../../css/search.css'
+import './search.css'
 
 function Search() {
     const [img, setImg] = useState([]);

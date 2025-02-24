@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb+srv://kjugendra63:639871qp@cluster0.uuxzv.mongodb.net/digiLibrary';
+require('dotenv').config();
+const URI = process.env.MONGO_URI;
 
 function connectDb() {
     mongoose.connect(URI)

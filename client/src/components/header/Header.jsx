@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { jwtDecode } from "jwt-decode";
 
-import '../../css/header.css'
+import './header.css'
 
 function Header() {
     let isLoggedIn = false;

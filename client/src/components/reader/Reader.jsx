@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/reader.css'
+import './reader.css'
 
 function Reader() {
   const pages = document.getElementsByClassName('page');

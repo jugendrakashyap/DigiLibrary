@@ -1,0 +1,134 @@
+header {
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+}
+
+span {
+  color: rgb(255, 102, 0);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_header {
+  padding: 0px 30px;
+
+}
+
+.logo_box {
+  cursor: pointer;
+}
+
+.logo_img {
+  width: 50px;
+  height: 45px;
+  margin-right: 5px;
+}
+
+.search_bar {
+  width: 30vw;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 0.9rem;
+  background-color: #cccccc3f;
+  outline: none;
+}
+
+.search_options {
+  display: none;
+  float: right;
+  width: 30vw;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 2px 5px #ccc;
+}
+
+.search_option {
+  padding: 7px 0 7px 20px;
+  list-style-type: none;
+  cursor: pointer;
+  text-align: left;
+  line-height: 2rem;
+
+  &:hover {
+    background-color: #cccccc88;
+  }
+}
+
+.login_box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px 7px;
+  cursor: pointer;
+  color: #4b4b4b;
+
+  &:hover {
+    background-color: #cccccc66;
+  }
+}
+
+.goto_Login {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  height: 37px;
+  gap: 5px;
+  line-height: 37px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  padding: 3px 9px 3px 7px;
+  cursor: pointer;
+  color: #4b4b4b;
+
+  &:hover {
+    background-color: #cccccc66;
+  }
+}
+
+.library_box {
+  margin-left: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px 7px;
+  cursor: pointer;
+  color: #4b4b4b;
+
+  &:hover {
+    background-color: #cccccc66;
+  }
+
+  &:hover .library_btn {
+    background-color: #cccccc2c;
+  }
+}
+
+.login_btn {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+  background-image: url(../../images/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginBtnImg {
+  width: 28px;
+  height: 28px;
+}
+
+.library_btn {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+  background-color: white;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/29/29302.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

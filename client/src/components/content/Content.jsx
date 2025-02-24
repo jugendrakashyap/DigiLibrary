@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../css/content.css'
+import './content.css'
 
 function content() {
     function scrollRight() {

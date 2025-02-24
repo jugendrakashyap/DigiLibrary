@@ -1,0 +1,138 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.hero {
+  height: 65vh;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.slide {
+  width: 100vw;
+  height: 65vh;
+}
+
+.slide1 {
+  background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/08/15/Broken-White-Book-Store-Hero-Section-Graphics-36222978-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide2 {
+  background-image: url(https://cdn.dribbble.com/users/148405/screenshots/10812892/ebook-hero-image_4x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide3 {
+  background-image: url(https://wp.klientboost.com/wp-content/uploads/2021/12/image10-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec {
+  margin: 20px 0;
+}
+
+.label {
+  width: 70vw;
+  height: 100px;
+  background-color: rgb(255, 102, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 30px;
+  color: white;
+}
+
+.label1 {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #e7e7e7;
+}
+
+.forStyle {
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.scroll_btn {
+  width: 60px;
+  height: 120px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgba(233, 233, 233, 0.925);
+  box-shadow: -5px 0px 4px 2px rgb(92, 92, 92);
+  background-image: url(https://cdn-icons-png.flaticon.com/512/130/130884.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+
+.left_scroll_btn {
+  display: none;
+  left: 0px;
+  transform: rotate(180deg);
+}
+
+.books {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px 20px 30px;
+  height: fit-content;
+  gap: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.book {
+  width: 250px;
+  height: 390px;
+  background-color: #7979793f;
+  border-radius: 5px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+}
+
+.book1 {
+  background-image: url(../../images/books/basic_design.jpg);
+}
+
+.book2 {
+  background-image: url(../../images/books/stop_thinking_negative.jpg);
+}
+
+.book3 {
+  background-image: url(../../images/books/time_management.jpg);
+}
+
+.book4 {
+  background-image: url(../../images/books/rules_of_life.jpg);
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../css/search.css'
+import './search.css'
 
 function Mybooks() {
   return (
