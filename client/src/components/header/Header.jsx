@@ -10,6 +10,7 @@ function Header() {
     if (token) {
         isLoggedIn = true;
         const decoded = jwtDecode(token);
+        console.log(decoded);
         const currentTime = Math.floor(Date.now() / 1000);
         console.log("Current time:", currentTime);
 
@@ -50,7 +51,7 @@ function Header() {
                     <h1><span>digi</span>Library</h1>
                 </div>
                 <div className="search_box" id="search_box">
-                    <input className="search_bar" id="search_bar" type="text" placeholder="Search for a ebook" onFocus={showOptions} />
+                    <input className="search_bar" id="search_bar" type="text" placeholder="Search for ebook" onFocus={showOptions} />
                     <div className="search_options" id="search_options">
                         <p className="search_option">Pride and Prejudice</p>
                         <p className="search_option">The Great Gatsby</p>
