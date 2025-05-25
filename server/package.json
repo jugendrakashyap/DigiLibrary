@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "build": "npm i",
+    "build": "npm install",
     "start": "node src/index.js"
   },
   "author": "Jugendra Kashyap",
