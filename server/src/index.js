@@ -19,6 +19,10 @@ app.use(cors({ origin: "*" }));
 
 connectDb();
 
+app.get('/', (req, res) => {
+    res.send("homepage");
+})
+
 app.use('/', routes);
 
 app.listen(8000, () => {

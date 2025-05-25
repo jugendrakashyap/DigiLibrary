@@ -32,7 +32,7 @@ function Signup() {
             return;
         }
 
-        axios.post('http://localhost:8000/signup', {
+        axios.post('https://digilibrary-w06n.onrender.com/register', {
             name: name,
             email: email,
             phone: phone,
