@@ -47,7 +47,7 @@ function Header() {
             <div className="top_header flex">
                 <div className="logo_box flex" onClick={() => window.location.href = '/'}>
                     <img className="logo_img" src="images/logo.png" alt="logo" />
-                    <h1><span>digi</span>Library</h1>
+                    <h1><span>Digi</span>Library</h1>
                 </div>
                 <div className="search_box" id="search_box">
                     <input className="search_bar" id="search_bar" type="text" placeholder="Search for a ebook" onFocus={showOptions} />
@@ -74,13 +74,10 @@ function Header() {
                                 <p>Login</p>
                             </button>
                     }
-                    {
-                        isLoggedIn ? <div className="flex library_box" onClick={() => window.location.href = '/collections'}>
-                            <div className="library_btn"></div>
-                            <p>My Books</p>
-                        </div>
-                            : null
-                    }
+                    <div className="flex library_box" onClick={() => window.location.href = '/collections'}>
+                        <div className="library_btn"></div>
+                        <p>My Books</p>
+                    </div>
                 </div>
             </div>
         </>

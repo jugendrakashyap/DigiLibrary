@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 // app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors({ origin: "https://digilibrary-w06n.onrender.com" }));
+app.use(cors({ origin: "http://localhost:8000" }));
 // app.use(helmet());
 
 connectDb();

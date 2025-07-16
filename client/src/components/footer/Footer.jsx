@@ -7,7 +7,7 @@ function Footer() {
         <footer>
             <div className="footer_logo">
                 <div className="tvs_svg"></div>
-                <h1 className="heading0"><span>digi</span>Library</h1>
+                <h1 className="heading0"><span>Digi</span>Library</h1>
             </div>
             <div className="container0">
                 <div className="footer_col">
@@ -97,7 +97,7 @@ function Footer() {
                 </div>
             </div>
             <div className="contact">
-                <div className="contact_container">
+                <div className="contact_container contact_number">
                     <h4 className="heading4">CONTACT</h4>
                     <a href="#" className="link">1800 2587 555</a>
                 </div>
@@ -109,10 +109,8 @@ function Footer() {
                     <h4 className="heading4">NEED ROAD SIDE ASSISTANCE</h4>
                     <a href="#" className="link">Dial - 1800 258 7111 and Press "1"</a>
                 </div>
-                <div></div>
-                <div></div>
             </div>
-            <div className="copyright">&copy TVS Motor. All Rights
+            <div className="copyright">&copy DigiLibrary. All Rights
                 Reserved | Privacy Policy |
                 Disclaimer | Cookie Policy
             </div>
