@@ -17,9 +17,10 @@
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.11.0",
-    "nodemon": "^3.1.9"
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.9",
+    "otp-generator": "^4.0.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jugendrakashyap/digiLibrary.git"
