@@ -11,7 +11,7 @@ function Search() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const bookData = await fetch('http://localhost:8000/search');
+            const bookData = await fetch('https://digilibrary-w06n.onrender.com/search');
             const data = await bookData.json();
             console.log(data)
 
